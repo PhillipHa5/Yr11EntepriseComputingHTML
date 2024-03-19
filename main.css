@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Fuggles);
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue);
+body {
+    margin: 0;
+}
+h1 {
+    font-family: "Fuggles";
+    text-align: center;
+    background-image: url(BackgroundImage2.webp);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    background-size: cover;
+    font-size: 68px;
+    height: 100px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+}
+header {
+    background-color: lightslategray;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    height:5vh;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+img {
+    size: 30px;
+}
