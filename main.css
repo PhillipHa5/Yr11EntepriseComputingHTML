@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bebas+Neue);
 body {
     margin: 0;
+    padding: 0;
 }
 h1 {
     font-family: "Fuggles";
@@ -25,6 +26,9 @@ header {
     font-family: 'Bebas Neue';
     font-size: 30px;
 }
-img {
-    size: 30px;
+.HeaderImage {
+    float: top;
+    margin: 5px;
+    padding: 0;
+    margin-top: 0;
 }
