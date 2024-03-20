@@ -17,18 +17,24 @@ h1 {
     margin-top: 0;
     padding: 0;
 }
+#HeaderImage {
+    float: left;
+    margin: 5px;
+    padding: 0;
+    margin-top: 0;
+    width:45px;
+    height:auto;
+}
+
 header {
     background-color: lightslategray;
     color: white;
     margin-top: 0;
     margin-bottom: 0;
-    height:5vh;
     font-family: 'Bebas Neue';
     font-size: 30px;
+    height:50px;
 }
-.HeaderImage {
-    float: top;
-    margin: 5px;
-    padding: 0;
-    margin-top: 0;
+#specialp {
+    margin: 0;
 }
