@@ -1,5 +1,8 @@
+/*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Fuggles);
 @import url(https://fonts.googleapis.com/css?family=Bebas+Neue);
+
+/* Classes*/
 body {
     margin: 0;
     padding: 0;
@@ -20,15 +23,28 @@ h1 {
 header {
     background-color: lightslategray;
     color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    height:5vh;
+    height: 7vh;
     font-family: 'Bebas Neue';
     font-size: 30px;
 }
-.HeaderImage {
-    float: top;
+
+/* Ids*/
+#HeaderText {
+    padding: 0;
+    margin: 0;
+}
+#IconImg {
+    float: left;
     margin: 5px;
     padding: 0;
     margin-top: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+}
+#BodyText {
+    text-align:center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    word-wrap: break-word;
 }
