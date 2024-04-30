@@ -1,6 +1,7 @@
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Fuggles);
 @import url(https://fonts.googleapis.com/css?family=Bebas+Neue);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
 /* Classes*/
 body {
@@ -15,15 +16,16 @@ h1 {
     font-weight: bold;
     background-size: cover;
     font-size: 68px;
-    height: 100px;
+    height: 25vh;
     width: 100%;
     margin-top: 0;
     padding: 0;
 }
+
 header {
-    background-color: lightslategray;
+    background-color: rgb(235, 221, 131);
     color: white;
-    height: 7vh;
+    height: 15vh;
     font-family: 'Bebas Neue';
     font-size: 30px;
 }
@@ -32,19 +34,56 @@ header {
 #HeaderText {
     padding: 0;
     margin: 0;
+    width: 290x;
+    height: 15vh;
+    font-size:45px;
+    margin-left: 110px;
+    text-align:center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transform: translateY(25%);
+}
+.HeaderLogo {
+    float:left;
 }
 #IconImg {
-    float: left;
     margin: 5px;
-    padding: 0;
-    margin-top: 0;
-    width: 50px;
-    height: 50px;
-    border: 0;
+    padding: 0px;
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
 }
 #BodyText {
     text-align:center;
     margin-left: 5vw;
     margin-right: 5vw;
     word-wrap: break-word;
+}
+ul {
+    display: inline;
+    float: right;
+    list-style-type: none;
+    margin:30px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(235, 221, 131);
+}   
+
+li {
+    float: right;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+li a:hover {
+    background-color: rgb(222, 197, 30);
 }
