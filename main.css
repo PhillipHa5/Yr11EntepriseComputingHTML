@@ -21,14 +21,32 @@ h1 {
     margin-top: 0;
     padding: 0;
 }
+<<<<<<< HEAD
+=======
+#HeaderImage {
+    float: left;
+    margin: 5px;
+    padding: 0;
+    margin-top: 0;
+    width:45px;
+    height:auto;
+}
+>>>>>>> c5e885203aed8fc3ed4a1f8d15aa87e14cf61582
 
 header {
     background-color: rgb(235, 221, 131);
     color: white;
+<<<<<<< HEAD
     height: 15vh;
+=======
+    margin-top: 0;
+    margin-bottom: 0;
+>>>>>>> c5e885203aed8fc3ed4a1f8d15aa87e14cf61582
     font-family: 'Bebas Neue';
     font-size: 30px;
+    height:50px;
 }
+<<<<<<< HEAD
 
 /* Ids*/
 #HeaderText {
@@ -86,4 +104,8 @@ li a {
 
 li a:hover {
     background-color: rgb(222, 197, 30);
+=======
+#specialp {
+    margin: 0;
+>>>>>>> c5e885203aed8fc3ed4a1f8d15aa87e14cf61582
 }

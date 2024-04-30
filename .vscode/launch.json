@@ -7,8 +7,14 @@
         {
             "type": "chrome",
             "request": "launch",
+<<<<<<< HEAD
             "name": "Open Home.html",
             "file": "c:\\Users\\maste\\OneDrive\\Documents\\GitHub\\Yr11EntepriseComputingHTML\\Home.html"
+=======
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+>>>>>>> c5e885203aed8fc3ed4a1f8d15aa87e14cf61582
         }
     ]
 }
