@@ -3,15 +3,17 @@
     <head>
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="Icon.png">
+        <script src="scripts.js"></script>
         <title>Meet and Eat Cafe</title>
     </head>
     <body>
         <header>
             <div class="HeaderLogo">
-            <a href="Home.html" target="_self"><img src="Icon.png" alt="Meet And Eat Cafe" id="IconImg"></a> 
+            <a href="Home.html" target="_self"><img src="images/Icon.png" alt="Meet And Eat Cafe" id="IconImg"></a> 
             <p id="HeaderText">Meet and Eat Cafe</p> 
             </div>
             <ul>
+                <img src="images/profileicon.png" class="profileicon" onclick="openclosemenu()">
                 <li><a href="Home.html">Menu</a></li>
                 <li><a href="Home.html">About Us</a></li>
                 <li><a href="Home.html">Store</a></li>
@@ -19,6 +21,19 @@
                 <li><a href="Home.html">Our Reviews</a></li>
                 <li><a href="Home.html">Booking</a></li>
             </ul>
+            </div>
+            <div class="profilesize" id="menu">
+                <div class="profilebackground">
+                    <div class="profileinfo">
+                        <h2>Not Signed In</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="profilelinks">
+                        <p>Sign In</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
         </header>
     <h1>Meet and Eat Cafe</h1>
     <p id="BodyText"></p>

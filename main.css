@@ -1,9 +1,8 @@
-/*Fonts*/
+
 @import url(https://fonts.googleapis.com/css?family=Fuggles);
-@import url(https://fonts.googleapis.com/css?family=Bebas+Neue);
+@import url(https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap);
 @import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
 
-/* Classes*/
 body {
     margin: 0;
     padding: 0;
@@ -36,11 +35,8 @@ header {
     height: 15vh;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Bebas Neue';
-    font-size: 30px;
 }
 
-/* Ids*/
 #HeaderText {
     padding: 0;
     margin: 0;
@@ -52,6 +48,9 @@ header {
     display: block;
     color: white;
     text-decoration: none;
+    line-height:15vh;
+    font-family: 'Poetsen One';
+    font-size: 25px;
 }
 .HeaderLogo {
     float:left;
@@ -92,8 +91,79 @@ li a {
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
+    line-height:15vh;
+    font-family: 'Poetsen One';
+    font-size: 25px;
 }
 
 li a:hover {
     background-color: rgb(222, 197, 30);
+}
+
+.profileicon {
+    height:10vh;
+    width:auto;
+    border-radius:50%;
+    float:right;
+    margin:15px;
+
+}
+.profilesize {
+    position:absolute;
+    top:100%;
+    right:10%;
+    width:320px;
+    max-height:0px;
+    overflow:hidden;
+}
+.profilesize.openedmenu {
+    max-height:30vh;
+}
+.profilebackground {
+    background:#fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.profileinfo {
+    display:flex;
+    align-items:center;
+}
+
+.profileinfo h3 {
+    font-weight:500;
+}
+.profileinfo img {
+    width:60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+hr {
+    border:0;
+    height:1px;
+    width:100%;
+    background:#9d9c9c;
+    margin: 15px 0px 10px;
+}
+.profilelinks {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    margin: 12px 0px;
+}
+
+.profilelinks p {
+    width:100%;
+}
+
+.profilelinks span {
+    font-size: 25px;
+}
+
+.profilelinks:hover p {
+    font-weight:bold;
+}
+.profilelinks:hover span {
+    font-weight:bold;
 }
