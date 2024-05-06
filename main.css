@@ -1,13 +1,193 @@
-
 @import url(https://fonts.googleapis.com/css?family=Fuggles);
 @import url(https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap);
 @import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
 
+/*Navbar+Header*/
+
+header {
+    background-color: rgb(235, 221, 131);
+    color: white;
+    height: 15vh;
+    margin-top: 0;
+    margin-bottom: fixed;
+    width: 100%;
+    position: fixed;
+}
+
+#HeaderImage {
+    float: left;
+    margin: 5px;
+    padding: 0;
+    margin-top: 0;
+    width: 45px;
+    height: auto;
+}
+
+#HeaderText {
+    padding: 0;
+    margin: 0;
+    width: 290x;
+    height: 15vh;
+    font-size: 45px;
+    margin-left: 110px;
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    line-height: 15vh;
+    font-family: "Poetsen One";
+    font-size: 25px;
+}
+
+.HeaderLogo {
+    float: left;
+}
+
+#IconImg {
+    margin: 5px;
+    padding: 0px;
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+}
+
+
+/*Nav Bar*/
+
+ul {
+    display: inline;
+    float: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(235, 221, 131);
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 15vh;
+    font-family: "Poetsen One";
+    font-size: 25px;
+}
+
+li a:hover {
+    background-color: rgb(222, 197, 30);
+    text-decoration: underline;
+}
+
+
+/*User Profile*/
+
+.profileicon {
+    height: 10vh;
+    width: auto;
+    border-radius: 50%;
+    float: right;
+    margin: 15px;
+}
+
+.profilesize {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.profilesize.openedmenu {
+    max-height: 30vh;
+}
+
+.profilebackground {
+    background: #cfcece;
+    padding: 20px;
+    margin: 10px;
+}
+
+.profileinfo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.profileinfo h2 {
+    font-weight: 500;
+    color: black;
+    font-family: "Poetsen One";
+}
+
+.profileinfo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #9d9c9c;
+    margin: 15px 0px 10px;
+}
+
+.profilelinks {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 12px 0px;
+}
+
+.profilelinks p {
+    width: 100%;
+}
+
+.profilelinks span {
+    font-size: 25px;
+}
+
+.profilelinks:hover p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.profilelinks:hover span {
+    font-weight: bold;
+}
+
+ul:hover img {
+    cursor: pointer;
+}
+
+
+/*Page Specific: Home*/
+
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
-h1 {
+
+#BodyText {
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    word-wrap: break-word;
+}
+
+#HomePageH1 {
     font-family: "Fuggles";
     text-align: center;
     background-image: url(BackgroundImage2.webp);
@@ -20,160 +200,35 @@ h1 {
     margin-top: 0;
     padding-top: 15vh;
 }
-#HeaderImage {
-    float: left;
-    margin: 5px;
-    padding: 0;
-    margin-top: 0;
-    width:45px;
-    height:auto;
+
+
+/*Page Specific:Login*/
+
+#LoginBackground {
+    background-image: linear-gradient(to right, red, yellow);
 }
 
-header {
-    background-color: rgb(235, 221, 131);
-    color: white;
-    height: 15vh;
-    margin-top: 0;
-    margin-bottom: fixed;
-    width:100%;
-    position:fixed;
-}
-
-#HeaderText {
-    padding: 0;
-    margin: 0;
-    width: 290x;
-    height: 15vh;
-    font-size:45px;
-    margin-left: 110px;
-    text-align:center;
-    display: block;
-    color: white;
-    text-decoration: none;
-    line-height:15vh;
-    font-family: 'Poetsen One';
-    font-size: 25px;
-}
-.HeaderLogo {
-    float:left;
-}
-#IconImg {
-    margin: 5px;
-    padding: 0px;
-    margin: 10px;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-}
-#BodyText {
-    text-align:center;
+#LoginPageBackgroundBodyText {
+    background-image: linear-gradient(to right, red, yellow);
+    text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
     word-wrap: break-word;
 }
-ul {
-    display: inline;
-    float: right;
-    list-style-type: none;
-    margin:0px;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(235, 221, 131);
-}   
 
-li {
-    float: right;
-    
+#LoginPage {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height:15vh;
-    font-family: 'Poetsen One';
+#LoginH1 {
     font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
 }
-
-li a:hover {
-    background-color: rgb(222, 197, 30);
-    text-decoration:underline;
-}
-
-.profileicon {
-    height:10vh;
-    width:auto;
-    border-radius:50%;
-    float:right;
-    margin:15px;
-
-}
-.profilesize {
-    position:absolute;
-    top:100%;
-    right:0;
-    width:320px;
-    max-height:0px;
-    overflow:hidden;
-}
-.profilesize.openedmenu {
-    max-height:30vh;
-}
-.profilebackground {
-    background:#cfcece;
-    padding: 20px;
-    margin: 10px;
-}
-
-.profileinfo {
-    display:flex;
-    align-items:center;
-    text-decoration:none;
-    color:black;
-}
-
-.profileinfo h2 {
-    font-weight:500;
-    color:black;
-    font-family: 'Poetsen One';
-   
-}
-.profileinfo img {
-    width:60px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-hr {
-    border:0;
-    height:1px;
-    width:100%;
-    background:#9d9c9c;
-    margin: 15px 0px 10px;
-}
-.profilelinks {
-    display:flex;
-    align-items:center;
-    text-decoration:none;
-    margin: 12px 0px;
-}
-
-.profilelinks p {
-    width:100%;
-}
-
-.profilelinks span {
-    font-size: 25px;
-}
-
-.profilelinks:hover p {
-    font-weight:bold;
-    text-decoration:underline;
-}
-.profilelinks:hover span {
-    font-weight:bold;
-}
-
