@@ -1,10 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Fuggles);
 @import url(https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap);
 @import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+@import url(https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+#NOMARGINPLEASE {
+    margin:0;
+}
 
 /*Navbar+Header*/
-
-header {
+h1 {
+    color:white;
+}
+nav {
     background-color: rgb(235, 221, 131);
     color: white;
     height: 15vh;
@@ -12,6 +19,7 @@ header {
     margin-bottom: fixed;
     width: 100%;
     position: fixed;
+    top:0;
 }
 
 #HeaderImage {
@@ -43,6 +51,11 @@ header {
     float: left;
 }
 
+#HeaderText:hover {
+    background-color: rgb(222, 197, 30);
+    text-decoration: underline;
+}
+
 #IconImg {
     margin: 5px;
     padding: 0px;
@@ -50,9 +63,12 @@ header {
     width: 90px;
     height: 90px;
     position: absolute;
+    text-decoration:none;
 }
 
-
+#NOUNDERLINEPLEASE {
+    text-decoration:none;
+}
 /*Nav Bar*/
 
 ul {
@@ -111,7 +127,7 @@ li a:hover {
 }
 
 .profilebackground {
-    background: #cfcece;
+    background: #ffff;
     padding: 20px;
     margin: 10px;
 }
@@ -139,7 +155,7 @@ hr {
     border: 0;
     height: 1px;
     width: 100%;
-    background: #9d9c9c;
+    background: #8b8b8b;
     margin: 15px 0px 10px;
 }
 
@@ -174,20 +190,16 @@ ul:hover img {
 
 /*Page Specific: Home*/
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-
 #BodyText {
     text-align: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin: 0 5vh 0 5vh;
     word-wrap: break-word;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    background-color:#ffff;
 }
 
-#HomePageH1 {
+.HomePageH1 {
     font-family: "Fuggles";
     text-align: center;
     background-image: url(BackgroundImage2.webp);
@@ -197,38 +209,118 @@ body {
     font-size: 68px;
     height: 25vh;
     width: 100%;
-    margin-top: 0;
+    margin: 0;
     padding-top: 15vh;
 }
 
+#HomeBackground {
+    background-image: url(images/CafeBackground.jpg);
+    background-repeat: no-repeat;
+    margin:0;
+    background-size:cover;
+}
 
 /*Page Specific:Login*/
 
+
 #LoginBackground {
-    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to right, blue, #8ea6e7);
+    padding-top:15vh;
+    margin:0;
 }
 
 #LoginPageBackgroundBodyText {
-    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to right, blue, lightblue);
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
     word-wrap: break-word;
 }
 
-#LoginPage {
+.LoginPage {
     background: #fff;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
+    height:150vh;
     border-radius: 10px;
     padding: 30px;
+    margin-top:17vh;
 }
 
 #LoginH1 {
-    font-size: 25px;
+    font-size: 50px;
     color: #001e4d;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
+}
+
+#breadcrumb:hover {
+    background-color:#a1a1a1;
+}
+
+#loginform {
+    text-align:center;
+    font-family: "teko";
+    font-size:40px;
+}
+
+
+#ForgotUsername {
+    font-family:'Tinos';
+    color:darkslateblue;
+    font-size:18px;
+}
+#LogInButton {
+    background-color:rgb(76, 122, 221);
+    padding: 15px 32px;
+    text-align:center;
+    display:inline-block;
+    font-size: 25px;
+    text-decoration:none;
+    color:white;
+    border:none;
+    border-radius:50px;
+}
+
+#LogInButton:hover {
+    background-color:rgb(54, 87, 158);
+}
+
+#textboxid {
+    margin: 15px 0 0 0;
+    padding:0;
+    font-size:40px;
+}
+
+#breadcrumb {
+    text-decoration:underline;
+    color:black;
+}
+
+
+
+/*Page Specific:Booking*/
+
+.HomePageH1 p {
+    margin:0;
+}
+
+.HomePageH1 h1 {
+    margin:0;
+}
+
+#breadcrumbyummy {
+    padding-left:15px;
+    float:left;
+    text-wrap:wrap;
+    background-color: rgb(255, 255, 255, 0.8);
+    width:100%;
+    text-align:left;
+    font-family:"Tinos";
+    font-size:30px;
+    height:7.2vh;
+    display:flex;
+    align-items:center;
 }
