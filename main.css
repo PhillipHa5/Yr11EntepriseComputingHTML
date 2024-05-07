@@ -4,13 +4,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 #NOMARGINPLEASE {
-    margin:0;
+    margin: 0;
 }
 
+
 /*Navbar+Header*/
+
 h1 {
-    color:white;
+    color: white;
 }
+
 nav {
     background-color: rgb(235, 221, 131);
     color: white;
@@ -19,7 +22,7 @@ nav {
     margin-bottom: fixed;
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
 }
 
 #HeaderImage {
@@ -63,12 +66,14 @@ nav {
     width: 90px;
     height: 90px;
     position: absolute;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 #NOUNDERLINEPLEASE {
-    text-decoration:none;
+    text-decoration: none;
 }
+
+
 /*Nav Bar*/
 
 ul {
@@ -102,10 +107,24 @@ li a:hover {
     text-decoration: underline;
 }
 
+#contactusbutton {
+    background-color: rgb(222, 207, 93);
+    border-radius: 80px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5vh;
+}
+
+#contactusbutton:hover {
+    background-color: rgb(206, 180, 9);
+    text-decoration: underline;
+}
+
 
 /*User Profile*/
 
-.profileicon {
+#profileicon {
     height: 10vh;
     width: auto;
     border-radius: 50%;
@@ -194,9 +213,9 @@ ul:hover img {
     text-align: center;
     margin: 0 5vh 0 5vh;
     word-wrap: break-word;
-    padding-top:5vh;
-    padding-bottom:5vh;
-    background-color:#ffff;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #ffff;
 }
 
 .HomePageH1 {
@@ -207,7 +226,7 @@ ul:hover img {
     font-weight: bold;
     background-size: cover;
     font-size: 68px;
-    height: 25vh;
+    height: 35vh;
     width: 100%;
     margin: 0;
     padding-top: 15vh;
@@ -216,17 +235,23 @@ ul:hover img {
 #HomeBackground {
     background-image: url(images/CafeBackground.jpg);
     background-repeat: no-repeat;
-    margin:0;
-    background-size:cover;
+    margin: 0;
+    background-size: cover;
 }
+
 
 /*Page Specific:Login*/
 
+#loginformatid {
+    float: left;
+    margin-left: 7vh;
+}
 
 #LoginBackground {
     background-image: linear-gradient(to right, blue, #8ea6e7);
-    padding-top:15vh;
-    margin:0;
+    padding-top: 10vh;
+    margin: 0;
+    padding-bottom: 10vh;
 }
 
 #LoginPageBackgroundBodyText {
@@ -242,14 +267,14 @@ ul:hover img {
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
-    height:150vh;
+    height: 80vh;
     border-radius: 10px;
     padding: 30px;
-    margin-top:17vh;
+    margin-top: 17vh;
 }
 
 #LoginH1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #001e4d;
     font-weight: 600;
     border-bottom: 1px solid #333;
@@ -257,70 +282,73 @@ ul:hover img {
 }
 
 #breadcrumb:hover {
-    background-color:#a1a1a1;
+    background-color: #a1a1a1;
 }
 
 #loginform {
-    text-align:center;
+    text-align: center;
     font-family: "teko";
-    font-size:40px;
+    font-size: 40px;
 }
 
-
-#ForgotUsername {
-    font-family:'Tinos';
-    color:darkslateblue;
-    font-size:18px;
+.ForgotUsername {
+    font-family: 'Tinos';
+    color: darkslateblue;
+    font-size: 18px;
 }
+
+#signup {
+    color: red;
+}
+
 #LogInButton {
-    background-color:rgb(76, 122, 221);
+    background-color: rgb(76, 122, 221);
     padding: 15px 32px;
-    text-align:center;
-    display:inline-block;
+    text-align: center;
+    display: inline-block;
     font-size: 25px;
-    text-decoration:none;
-    color:white;
-    border:none;
-    border-radius:50px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 50px;
 }
 
 #LogInButton:hover {
-    background-color:rgb(54, 87, 158);
+    background-color: rgb(54, 87, 158);
 }
 
 #textboxid {
-    margin: 15px 0 0 0;
-    padding:0;
-    font-size:40px;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
 }
 
 #breadcrumb {
-    text-decoration:underline;
-    color:black;
+    text-decoration: underline;
+    color: black;
 }
-
 
 
 /*Page Specific:Booking*/
 
 .HomePageH1 p {
-    margin:0;
+    margin: 0;
 }
 
 .HomePageH1 h1 {
-    margin:0;
+    margin: 5.5vh 0 0 0;
 }
 
 #breadcrumbyummy {
-    padding-left:15px;
-    float:left;
-    text-wrap:wrap;
+    padding-left: 15px;
+    float: left;
+    text-wrap: wrap;
     background-color: rgb(255, 255, 255, 0.8);
-    width:100%;
-    text-align:left;
-    font-family:"Tinos";
-    font-size:30px;
-    height:7.2vh;
-    display:flex;
-    align-items:center;
+    width: 100%;
+    text-align: left;
+    font-family: "Tinos";
+    font-size: 30px;
+    height: 7vh;
+    display: flex;
+    align-items: center;
 }
