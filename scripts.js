@@ -1,31 +1,19 @@
-let openmenu = document.getElementById("menu");
+const profilebutton = document.getElementById('profileicon')
+const profilemenu = document.getElementById('menu')
 
-const Menu = document.querySelector('menu');
-const Profileicon = document.querySelector('profileicon');
-
-function openclosemenu() {
-    openmenu.classList.toggle("openedmenu");
-}
-if (Profileicon == null) {
-    console.log('HAIIIII')
-}
-
-let x = 0;
-
-function helpmepls() {
-    if (x == 0) {
-        x = x + 1
-        console.log(x)
-    } else {
-        x = x - 1
-        console.log(x)
+document.onclick = ($e) => {
+    let x = [$e.srcElement];
+    console.log(x);
+    console.log(x[0])
+    let pee = x[0].id;
+    console.log(pee);
+    if(pee == 'profileicon') {
+        profilemenu.classList.toggle('openedmenu');
+        console.log("HAIII");
     }
-}
-
-if (x == 0) {
-    openmenu.classList.add("openedmenu")
-}
-
-if (x == 1) {
-    openmenu.classList.remove("openedmenu")
+    if(pee == 'menu') {
+    }
+    else {
+        profilemenu.classList.remove('openedmenu');
+    }
 }
