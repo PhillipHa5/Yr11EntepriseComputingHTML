@@ -16,7 +16,7 @@
             </a>
         </div>
         <ul>
-            <img src="images/profileicon.png" class="profileicon" onclick="openclosemenu()">
+            <img src="images/profileicon.png" id="profileicon">
             <li><a href="Home.html" id="contactusbutton">Contact Us</a></li>
             <li><a href="Home.html">Menu</a></li>
             <li><a href="Home.html">About Us</a></li>
@@ -27,13 +27,13 @@
         </ul>
         </div>
         <div class="profilesize" id="menu">
-            <div class="profilebackground">
-                <div class="profileinfo">
-                    <h2>Not Signed In</h2>
+            <div class="profilebackground" id="logintext">
+                <div class="profileinfo" id="logintext">
+                    <h2 id="logintext">Not Signed In</h2>
                 </div>
                 <hr>
-                <a href="Login.html" class="profilelinks">
-                    <p>Sign In</p>
+                <a href="Login.html" class="profilelinks" id="logintext">
+                    <p id="logintext">Sign In</p>
                     <span>></span>
                 </a>
             </div>
@@ -43,9 +43,9 @@
         <h1 id="LoginH1"><a href="Home.html" id="breadcrumb">Home</a> > Login</h1>
         <form id="loginform">
             <label for="username" id="loginformatid">Username/Email:</label><br>
-            <input type="text" id="textboxid"><br>
+            <input type="text" id="textboxid" placeholder="Enter your email"><br>
             <label for="pass" id="loginformatid">Password:</label><br>
-            <input type="text" id="textboxid"><br>
+            <input type="text" id="textboxid" placeholder="Enter your password"><br>
             <label class="ForgotUsername"><a href="ForgotLogin">Forgot Username/Password?</a></label><br>
             <label><button id="LogInButton">Log In</button></label><br>
             <label class="ForgotUsername">Not A Member? <a id="signup" href="Register.html">Sign Up Here</a></label>

@@ -7,13 +7,24 @@ document.onclick = ($e) => {
     console.log(x[0])
     let pee = x[0].id;
     console.log(pee);
-    if(pee == 'profileicon') {
+    if (pee == 'profileicon') {
+        console.log("MenuOpened!");
         profilemenu.classList.toggle('openedmenu');
-        console.log("HAIII");
     }
-    if(pee == 'menu') {
+    if (pee == 'logintext') {
+        console.log('Clicked On Menu!')
     }
-    else {
-        profilemenu.classList.remove('openedmenu');
+    if (pee == 'menu') {
+        console.log('Clicked On Menu!')
+    }
+    if (pee == '') {
+        console.log('Menu Closed!')
+        profilemenu.classList.remove('openedmenu')
+    } else {
+        if (pee !== 'profileicon' && pee !== 'menu' && pee !== "logintext") {
+            console.log('Nothing Selected, Menu Closed!');
+            profilemenu.classList.remove('openedmenu');
+            console.log(pee)
+        }
     }
 }
