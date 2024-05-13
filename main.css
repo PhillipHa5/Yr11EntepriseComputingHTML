@@ -9,6 +9,20 @@
 }
 
 
+/*Footer*/
+
+footer {
+    background-color: rgb(231, 176, 75);
+    padding: 0;
+    margin: 0;
+    height: 15vh;
+}
+
+#webfooter {
+    margin: 0;
+}
+
+
 /*Navbar+Header*/
 
 h3 {
@@ -28,7 +42,6 @@ nav {
     color: white;
     height: 15vh;
     margin-top: 0;
-    margin-bottom: fixed;
     width: 100%;
     position: fixed;
     top: 0;
@@ -360,11 +373,12 @@ input {
 }
 
 #breadcrumbyummy {
-    padding-left: 15px;
+    padding-left: 2vw;
     float: left;
     text-wrap: wrap;
     background-color: rgb(255, 255, 255, 0.8);
-    width: 100%;
+    max-width: 98vw;
+    width: 96.9vw;
     text-align: left;
     font-family: "Tinos";
     font-size: 30px;
