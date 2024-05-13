@@ -11,6 +11,14 @@
 
 /*Navbar+Header*/
 
+h3 {
+    text-align: center;
+    margin: 0 5vh 0 5vh;
+    word-wrap: break-word;
+    background-color: #ffff;
+    font-size: 25px;
+}
+
 h1 {
     color: white;
 }
