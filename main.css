@@ -4,24 +4,55 @@
 @import url(https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 #NOMARGINPLEASE {
     margin: 0;
 }
-
-
 /*Footer*/
 
 footer {
-    background-color: rgb(231, 176, 75);
+    background-color: rgb(187, 178, 178);
+    border-top: rgb(223, 87, 83);
+    border-top-width:4px;
+    border-top-style:solid;
     padding: 0;
     margin: 0;
-    height: 15vh;
+    height: auto;
+    padding-left:15vw;
+    padding-top:3vh;
+    font-family: "Zilla Slab";
+    padding-bottom:2vh;
 }
 
-#webfooter {
+#webfooterheader {
     margin: 0;
+    font-weight:bold;
+    font-size: 25px;
+    padding-bottom: 1vh;
 }
 
+#webfootertext {
+    margin:0;
+    font-size: 25px;
+    text-decoration:none;
+    width:20vw;
+    line-height:3vw;
+}
+
+#webfootertext a {
+    color:black;
+}
+
+#webfootertext a:hover{
+    text-decoration:none;
+}
+
+.tradinghours {
+    float:right;
+    margin-right:3vh;
+    width:auto;
+    height:auto;
+}
 
 /*Navbar+Header*/
 
@@ -31,6 +62,9 @@ h3 {
     word-wrap: break-word;
     background-color: #ffff;
     font-size: 25px;
+    
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 h1 {
@@ -192,7 +226,7 @@ li a:hover {
     margin-right: 15px;
 }
 
-hr {
+#loginhr {
     border: 0;
     height: 1px;
     width: 100%;
@@ -235,9 +269,8 @@ ul:hover img {
     text-align: center;
     margin: 0 5vh 0 5vh;
     word-wrap: break-word;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
     background-color: #ffff;
+    font-size:20px;
 }
 
 .HomePageH1 {
@@ -254,6 +287,10 @@ ul:hover img {
     padding-top: 15vh;
 }
 
+.HomePageH1 h1 {
+    height:22.5vh;
+}
+
 #HomeBackground {
     background-image: url(images/CafeBackground.jpg);
     background-repeat: no-repeat;
@@ -261,6 +298,14 @@ ul:hover img {
     background-size: cover;
 }
 
+#homehr {
+    border: 0;
+    height: 1px;
+    width: 70%;
+    background: black;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 /*Page Specific:Login*/
 
@@ -377,8 +422,8 @@ input {
     float: left;
     text-wrap: wrap;
     background-color: rgb(255, 255, 255, 0.8);
-    max-width: 98vw;
-    width: 96.9vw;
+    max-width: 97.2vw;
+    width: 100vw;
     text-align: left;
     font-family: "Tinos";
     font-size: 30px;
