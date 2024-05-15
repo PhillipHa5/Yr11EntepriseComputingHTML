@@ -468,3 +468,12 @@ input {
     border-radius: 50px;
     margin-top: 3vh;
 }
+
+#bookingsubmit:hover {
+    background-color: rgb(54, 87, 158);
+    cursor:pointer;
+}
+
+.empty {
+    border-color:red;
+}
