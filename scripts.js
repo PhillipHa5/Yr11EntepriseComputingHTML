@@ -1,5 +1,6 @@
 const profilebutton = document.getElementById('profileicon')
 const profilemenu = document.getElementById('menu')
+let bookingformcheck = document.getElementById('bookingform')
 
 document.onclick = ($e) => {
     let x = [$e.srcElement];
@@ -27,4 +28,11 @@ document.onclick = ($e) => {
             console.log(pee)
         }
     }
+}
+let namecheckjs = document.getElementById("namecheck");
+
+function bookingcheck() {
+    var formdata = new FormData(bookingformcheck)
+    console.log(namecheckjs)
+    console.log(formdata)
 }

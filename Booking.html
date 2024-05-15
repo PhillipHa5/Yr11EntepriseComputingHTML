@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="images/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Meet and Eat Cafe</title>
 </head>
 
@@ -43,7 +44,44 @@
         <h1>Meet and Eat Cafe</h1>
         <p id="breadcrumbyummy"><a href="Home.html" id="breadcrumb">Home</a>&nbsp; > Booking</p>
     </div>
-    <p id="BodyText"></p>
+    <h3>Make A Booking
+        <hr id="homehr">
+    </h3>
+    <p id="BodyText">
+        <form class="bookingform">
+            <label>Name</label><br>
+            <input type="text" placeholder="Enter your name" id="namecheck"><br>
+            <label>Email</label><br>
+            <input type="text" placeholder="Enter your Email" id="emailcheck"><br>
+            <label>Phone Number</label><br>
+            <input type="text" placeholder="Enter your phone number" id="phonecheck"><br>
+            <label>Number Of People</label><br>
+            <input type="number" placeholder="Number of people" id="numbercheck"><br>
+            <label>Date/Time</label><br>
+            <input type="datetime-local"><br>
+            <button type="submit" id="bookingsubmit" onclick="bookingcheck()">Submit</button>
+        </form>
+    </p>
+    <footer>
+        <p id="webfooterheader">Meet and Eat Cafe</p>
+        <div class="tradinghours">
+            <br><br> 6:00am - 11:00pm<br> 6:00am - 11:00pm<br> 6:00am - 11:00pm<br> 6:00am - 11:00pm<br> 6:00am - 11:00pm<br> 6:00am - 11:00pm<br> 6:00am - 11:00pm<br>
+        </div>
+        <div class="tradingdays">
+            Trading hours<br><br> Monday: <br> Tuesday:
+            <br> Wednesday:
+            <br> Thursday:
+            <br> Friday:
+            <br> Saturday:
+            <br> Sunday:
+            <br>
+        </div>
+        <p id="webfootertext">
+            AG07/52 Sergeant St<br> Edmondson Park<br> NSW 2174<br>
+            <i class="fa-solid fa-phone"></i>02 8119 3817<br>
+            <i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/dir//Meet+and+Eat+Edsquare+AG07%2F52+Sergeant+St+Edmondson+Park+NSW+2174/@-33.9696011,150.8580073,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0x6b12ed00224723b1:0x82f8d58329e759d">Get Directions</a>
+        </p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 

@@ -8,51 +8,66 @@
 #NOMARGINPLEASE {
     margin: 0;
 }
+
+p {
+    margin: 0;
+}
+
+
 /*Footer*/
 
 footer {
     background-color: rgb(187, 178, 178);
     border-top: rgb(223, 87, 83);
-    border-top-width:4px;
-    border-top-style:solid;
+    border-top-width: 4px;
+    border-top-style: solid;
     padding: 0;
     margin: 0;
     height: auto;
-    padding-left:15vw;
-    padding-top:3vh;
+    padding-left: 15vw;
+    padding-top: 3vh;
     font-family: "Zilla Slab";
-    padding-bottom:2vh;
+    padding-bottom: 2vh;
+    bottom: 100%;
 }
 
 #webfooterheader {
     margin: 0;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 25px;
     padding-bottom: 1vh;
 }
 
 #webfootertext {
-    margin:0;
+    margin: 0;
     font-size: 25px;
-    text-decoration:none;
-    width:20vw;
-    line-height:3vw;
+    text-decoration: none;
+    width: 20vw;
+    line-height: 3vw;
 }
 
 #webfootertext a {
-    color:black;
+    color: black;
 }
 
-#webfootertext a:hover{
-    text-decoration:none;
+#webfootertext a:hover {
+    text-decoration: none;
+}
+
+.tradingdays {
+    float: right;
+    margin-right: 3vw;
+    width: auto;
+    height: auto;
 }
 
 .tradinghours {
-    float:right;
-    margin-right:3vh;
-    width:auto;
-    height:auto;
+    float: right;
+    margin-right: 10vw;
+    width: auto;
+    height: auto;
 }
+
 
 /*Navbar+Header*/
 
@@ -62,7 +77,6 @@ h3 {
     word-wrap: break-word;
     background-color: #ffff;
     font-size: 25px;
-    
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
@@ -270,7 +284,7 @@ ul:hover img {
     margin: 0 5vh 0 5vh;
     word-wrap: break-word;
     background-color: #ffff;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .HomePageH1 {
@@ -288,7 +302,7 @@ ul:hover img {
 }
 
 .HomePageH1 h1 {
-    height:22.5vh;
+    height: 22.5vh;
 }
 
 #HomeBackground {
@@ -303,9 +317,10 @@ ul:hover img {
     height: 1px;
     width: 70%;
     background: black;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /*Page Specific:Login*/
 
@@ -430,4 +445,26 @@ input {
     height: 7vh;
     display: flex;
     align-items: center;
+}
+
+.bookingform {
+    text-align: center;
+    margin: 0 5vh 0 5vh;
+    word-wrap: break-word;
+    background-color: #ffff;
+    font-size: 20px;
+    height: 50vh;
+}
+
+#bookingsubmit {
+    background-color: rgb(76, 122, 221);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 3vh;
 }
