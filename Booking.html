@@ -19,7 +19,7 @@
         <ul>
             <img src="images/profileicon.png" id="profileicon">
             <li><a href="Home.html" id="contactusbutton">Contact Us</a></li>
-            <li><a href="Home.html">Menu</a></li>
+            <li><a href="Menu.html">Menu</a></li>
             <li><a href="Home.html">About Us</a></li>
             <li><a href="Home.html">Store</a></li>
             <li><a href="Home.html">Our Reviews</a></li>
@@ -48,18 +48,24 @@
         <hr id="homehr">
     </h3>
     <p id="BodyText">
-        <form class="bookingform" onsubmit="return false">
+        <form id="bookingform" onsubmit="return false">
             <label>Name</label><br>
             <input type="text" placeholder="Enter your name" id="namecheck"><br>
+            <label id="incorrectname" style="display:none;">Please input a valid response</label><br>
             <label>Email</label><br>
             <input type="text" placeholder="Enter your Email" id="emailcheck"><br>
+            <label id="incorrectemail" style="display:none;">Please input a valid response</label><br>
             <label>Phone Number</label><br>
             <input type="text" placeholder="Enter your phone number" id="phonecheck"><br>
+            <label id="incorrectphone" style="display:none;">Please input a valid response</label><br>
             <label>Number Of People</label><br>
             <input type="number" placeholder="Number of people" id="numbercheck"><br>
+            <label id="incorrectnumber" style="display:none;">Please input a valid response</label><br>
             <label>Date/Time</label><br>
-            <input type="datetime-local"><br>
-            <button type="submit" id="bookingsubmit" onclick="bookingcheck()">Submit</button>
+            <input type="datetime-local" id="datetime"><br>
+            <label id="incorrectdate" style="display:none;">Please input a valid response</label><br>
+            <button type="submit" id="bookingsubmit" onclick="bookingcheck()">Submit</button><br>
+            <label id="submitted">Booking Submitted!</label>
         </form>
     </p>
     <footer>

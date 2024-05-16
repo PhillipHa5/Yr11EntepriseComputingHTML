@@ -447,13 +447,14 @@ input {
     align-items: center;
 }
 
-.bookingform {
+#bookingform {
     text-align: center;
     margin: 0 5vh 0 5vh;
     word-wrap: break-word;
     background-color: #ffff;
     font-size: 20px;
-    height: 50vh;
+    height: auto;
+    padding-bottom:5vh;
 }
 
 #bookingsubmit {
@@ -477,3 +478,8 @@ input {
 .empty {
     border-color:red;
 }
+
+#submitted {
+    display:none;
+}
+
