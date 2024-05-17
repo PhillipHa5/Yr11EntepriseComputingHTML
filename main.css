@@ -1,485 +1,497 @@
-@import url(https://fonts.googleapis.com/css?family=Fuggles);
-@import url(https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap);
-@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
-@import url(https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-#NOMARGINPLEASE {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-
-/*Footer*/
-
-footer {
-    background-color: rgb(187, 178, 178);
-    border-top: rgb(223, 87, 83);
-    border-top-width: 4px;
-    border-top-style: solid;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    padding-left: 15vw;
-    padding-top: 3vh;
-    font-family: "Zilla Slab";
-    padding-bottom: 2vh;
-    bottom: 100%;
-}
-
-#webfooterheader {
-    margin: 0;
-    font-weight: bold;
-    font-size: 25px;
-    padding-bottom: 1vh;
-}
-
-#webfootertext {
-    margin: 0;
-    font-size: 25px;
-    text-decoration: none;
-    width: 20vw;
-    line-height: 3vw;
-}
-
-#webfootertext a {
-    color: black;
-}
-
-#webfootertext a:hover {
-    text-decoration: none;
-}
-
-.tradingdays {
-    float: right;
-    margin-right: 3vw;
-    width: auto;
-    height: auto;
-}
-
-.tradinghours {
-    float: right;
-    margin-right: 10vw;
-    width: auto;
-    height: auto;
-}
-
-
-/*Navbar+Header*/
-
-h3 {
-    text-align: center;
-    margin: 0 5vh 0 5vh;
-    word-wrap: break-word;
-    background-color: #ffff;
-    font-size: 25px;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-h1 {
-    color: white;
-}
-
-nav {
-    background-color: rgb(235, 221, 131);
-    color: white;
-    height: 15vh;
-    margin-top: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-}
-
-#HeaderImage {
-    float: left;
-    margin: 5px;
-    padding: 0;
-    margin-top: 0;
-    width: 45px;
-    height: auto;
-}
-
-#HeaderText {
-    padding: 0;
-    margin: 0;
-    width: 290x;
-    height: 15vh;
-    font-size: 45px;
-    margin-left: 110px;
-    text-align: center;
-    display: block;
-    color: white;
-    text-decoration: none;
-    line-height: 15vh;
-    font-family: "Poetsen One";
-    font-size: 25px;
-}
-
-.HeaderLogo {
-    float: left;
-}
-
-#HeaderText:hover {
-    background-color: rgb(222, 197, 30);
-    text-decoration: underline;
-}
-
-#IconImg {
-    margin: 5px;
-    padding: 0px;
-    margin: 10px;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    text-decoration: none;
-}
-
-#NOUNDERLINEPLEASE {
-    text-decoration: none;
-}
-
-
-/*Nav Bar*/
-
-ul {
-    display: inline;
-    float: right;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(235, 221, 131);
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 15vh;
-    font-family: "Poetsen One";
-    font-size: 25px;
-}
-
-li a:hover {
-    background-color: rgb(222, 197, 30);
-    text-decoration: underline;
-}
-
-#contactusbutton {
-    background-color: rgb(222, 207, 93);
-    border-radius: 80px;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    margin-top: 2.5vh;
-}
-
-#contactusbutton:hover {
-    background-color: rgb(206, 180, 9);
-    text-decoration: underline;
-}
-
-
-/*User Profile*/
-
-#profileicon {
-    height: 10vh;
-    width: auto;
-    border-radius: 50%;
-    float: right;
-    margin: 15px;
-}
-
-.profilesize {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 320px;
-    max-height: 0px;
-    overflow: hidden;
-}
-
-.profilesize.openedmenu {
-    max-height: 30vh;
-}
-
-.profilebackground {
-    background: #ffff;
-    padding: 20px;
-    margin: 10px;
-}
-
-.profileinfo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-
-.profileinfo h2 {
-    font-weight: 500;
-    color: black;
-    font-family: "Poetsen One";
-}
-
-.profileinfo img {
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-#loginhr {
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #8b8b8b;
-    margin: 15px 0px 10px;
-}
-
-.profilelinks {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin: 12px 0px;
-}
-
-.profilelinks p {
-    width: 100%;
-}
-
-.profilelinks span {
-    font-size: 25px;
-}
-
-.profilelinks:hover p {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.profilelinks:hover span {
-    font-weight: bold;
-}
-
-ul:hover img {
-    cursor: pointer;
-}
-
-
-/*Page Specific: Home*/
-
-#BodyText {
-    text-align: center;
-    margin: 0 5vh 0 5vh;
-    word-wrap: break-word;
-    background-color: #ffff;
-    font-size: 20px;
-}
-
-.HomePageH1 {
-    font-family: "Fuggles";
-    text-align: center;
-    background-image: url(BackgroundImage2.webp);
-    background-repeat: no-repeat;
-    font-weight: bold;
-    background-size: cover;
-    font-size: 68px;
-    height: 35vh;
-    width: 100%;
-    margin: 0;
-    padding-top: 15vh;
-}
-
-.HomePageH1 h1 {
-    height: 22.5vh;
-}
-
-#HomeBackground {
-    background-image: url(images/CafeBackground.jpg);
-    background-repeat: no-repeat;
-    margin: 0;
-    background-size: cover;
-}
-
-#homehr {
-    border: 0;
-    height: 1px;
-    width: 70%;
-    background: black;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*Page Specific:Login*/
-
-#loginformatid {
-    float: left;
-    margin-left: 7vh;
-}
-
-#LoginBackground {
-    background-image: linear-gradient(to right, blue, #8ea6e7);
-    padding-top: 5vh;
-    margin: 0;
-    padding-bottom: 5vh;
-}
-
-#LoginPageBackgroundBodyText {
-    background-image: linear-gradient(to right, blue, lightblue);
-    text-align: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    word-wrap: break-word;
-}
-
-.LoginPage {
-    background: #fff;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    height: 70vh;
-    border-radius: 10px;
-    padding: 30px;
-    margin-top: 17vh;
-}
-
-#LoginH1 {
-    font-size: 30px;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
-}
-
-#breadcrumb:hover {
-    background-color: #a1a1a1;
-}
-
-#loginform {
-    text-align: center;
-    font-family: "teko";
-    font-size: 40px;
-}
-
-.ForgotUsername {
-    font-family: 'Tinos';
-    color: darkslateblue;
-    font-size: 18px;
-}
-
-#signup {
-    color: red;
-}
-
-#LogInButton {
-    background-color: rgb(76, 122, 221);
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    border: none;
-    border-radius: 50px;
-}
-
-#LogInButton:hover {
-    background-color: rgb(54, 87, 158);
-}
-
-#textboxid {
-    margin-left: 50px;
-    padding: 10px 0 10px 10px;
-    width: 65vh;
-    font-size: 20px;
-    font-family: "Noto Sans", sans-serif;
-    float: left;
-}
-
-#breadcrumb {
-    text-decoration: underline;
-    color: black;
-}
-
-input {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-style: solid;
-}
-
-
-/*Page Specific:Booking*/
-
-.HomePageH1 p {
-    margin: 0;
-}
-
-.HomePageH1 h1 {
-    margin: 5.5vh 0 0 0;
-}
-
-#breadcrumbyummy {
-    padding-left: 2vw;
-    float: left;
-    text-wrap: wrap;
-    background-color: rgb(255, 255, 255, 0.8);
-    max-width: 97.2vw;
-    width: 100vw;
-    text-align: left;
-    font-family: "Tinos";
-    font-size: 30px;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-}
-
-#bookingform {
-    text-align: center;
-    margin: 0 5vh 0 5vh;
-    word-wrap: break-word;
-    background-color: #ffff;
-    font-size: 20px;
-    height: auto;
-    padding-bottom:5vh;
-}
-
-#bookingsubmit {
-    background-color: rgb(76, 122, 221);
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    margin-top: 3vh;
-}
-
-#bookingsubmit:hover {
-    background-color: rgb(54, 87, 158);
-    cursor:pointer;
-}
-
-.empty {
-    border-color:red;
-}
-
-#submitted {
-    display:none;
-}
-
+    @import url(https://fonts.googleapis.com/css?family=Fuggles);
+    @import url(https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap);
+    @import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+    @import url(https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    #NOMARGINPLEASE {
+        margin: 0;
+    }
+    
+    p {
+        margin: 0;
+    }
+    /*Footer*/
+    
+    footer {
+        background-color: rgb(187, 178, 178);
+        border-top: rgb(223, 87, 83);
+        border-top-width: 4px;
+        border-top-style: solid;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        padding-left: 15vw;
+        padding-top: 3vh;
+        font-family: "Zilla Slab";
+        padding-bottom: 2vh;
+        bottom: 100%;
+    }
+    
+    #webfooterheader {
+        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+        padding-bottom: 1vh;
+    }
+    
+    #webfootertext {
+        margin: 0;
+        font-size: 25px;
+        text-decoration: none;
+        width: 50vw;
+        line-height: 3vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0;
+    }
+    
+    #webfootertext a {
+        color: black;
+    }
+    
+    #webfootertext a:hover {
+        text-decoration: none;
+    }
+    
+    .tradingdays {
+        float: right;
+        margin-right: 3vw;
+        width: auto;
+        height: auto;
+    }
+    
+    .tradinghours {
+        float: right;
+        margin-right: 10vw;
+        width: auto;
+        height: auto;
+    }
+    /*Navbar+Header*/
+    
+    h3 {
+        text-align: center;
+        margin: 0 5vh 0 5vh;
+        word-wrap: break-word;
+        background-color: #ffff;
+        font-size: 25px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    nav {
+        background-color: rgb(235, 221, 131);
+        color: white;
+        height: 15vh;
+        margin-top: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    
+    #HeaderImage {
+        float: left;
+        margin: 5px;
+        padding: 0;
+        margin-top: 0;
+        width: 45px;
+        height: auto;
+    }
+    
+    #HeaderText {
+        padding: 0;
+        margin: 0;
+        width: 290x;
+        height: 15vh;
+        font-size: 45px;
+        margin-left: 110px;
+        text-align: center;
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 15vh;
+        font-family: "Poetsen One";
+        font-size: 25px;
+    }
+    
+    .HeaderLogo {
+        float: left;
+    }
+    
+    #HeaderText:hover {
+        background-color: rgb(222, 197, 30);
+        text-decoration: underline;
+    }
+    
+    #IconImg {
+        margin: 5px;
+        padding: 0px;
+        margin: 10px;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        text-decoration: none;
+    }
+    
+    #NOUNDERLINEPLEASE {
+        text-decoration: none;
+    }
+    /*Nav Bar*/
+    
+    ul {
+        display: inline;
+        float: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(235, 221, 131);
+    }
+    
+    li {
+        float: right;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 15vh;
+        font-family: "Poetsen One";
+        font-size: 25px;
+    }
+    
+    li a:hover {
+        background-color: rgb(222, 197, 30);
+        text-decoration: underline;
+    }
+    
+    #contactusbutton {
+        background-color: rgb(222, 207, 93);
+        border-radius: 80px;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        margin-top: 2.5vh;
+    }
+    
+    #contactusbutton:hover {
+        background-color: rgb(206, 180, 9);
+        text-decoration: underline;
+    }
+    /*User Profile*/
+    
+    #profileicon {
+        height: 10vh;
+        width: auto;
+        border-radius: 50%;
+        float: right;
+        margin: 15px;
+    }
+    
+    .profilesize {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 320px;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    
+    .profilesize.openedmenu {
+        max-height: 30vh;
+    }
+    
+    .profilebackground {
+        background: #ffff;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .profileinfo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .profileinfo h2 {
+        font-weight: 500;
+        color: black;
+        font-family: "Poetsen One";
+    }
+    
+    .profileinfo img {
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
+    #loginhr {
+        border: 0;
+        height: 1px;
+        width: 100%;
+        background: #8b8b8b;
+        margin: 15px 0px 10px;
+    }
+    
+    .profilelinks {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 12px 0px;
+    }
+    
+    .profilelinks p {
+        width: 100%;
+    }
+    
+    .profilelinks span {
+        font-size: 25px;
+    }
+    
+    .profilelinks:hover p {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .profilelinks:hover span {
+        font-weight: bold;
+    }
+    
+    ul:hover img {
+        cursor: pointer;
+    }
+    /*Page Specific: Home*/
+    
+    #BodyText {
+        text-align: center;
+        margin: 0 5vh 0 5vh;
+        word-wrap: break-word;
+        background-color: #ffff;
+        font-size: 20px;
+    }
+    
+    .HomePageH1 {
+        font-family: "Fuggles";
+        text-align: center;
+        background-image: url(BackgroundImage2.webp);
+        background-repeat: no-repeat;
+        font-weight: bold;
+        background-size: cover;
+        font-size: 68px;
+        height: 35vh;
+        width: 100%;
+        margin: 0;
+        padding-top: 15vh;
+    }
+    
+    .HomePageH1 h1 {
+        height: 22.5vh;
+    }
+    
+    #HomeBackground {
+        background-image: url(images/CafeBackground.jpg);
+        background-repeat: no-repeat;
+        margin: 0;
+        background-size: cover;
+    }
+    
+    #homehr {
+        border: 0;
+        height: 1px;
+        width: 70%;
+        background: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Page Specific:Login*/
+    
+    #loginformatid {
+        float: left;
+        margin-left: 7vh;
+    }
+    
+    #LoginBackground {
+        background-image: url(images/CafeBackground.jpg);
+        padding-top: 5vh;
+        margin: 0;
+        background-repeat: no-repeat;
+        margin: 0;
+        background-size: cover;
+    }
+    
+    #LoginPageBackgroundBodyText {
+        background-image: linear-gradient(to right, blue, lightblue);
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        word-wrap: break-word;
+    }
+    
+    .LoginPage {
+        background: #fff;
+        width: 90%;
+        max-width: 600px;
+        margin: 100px auto 0;
+        height: 70vh;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 15vh;
+        margin-bottom: 5vh
+    }
+    
+    #LoginH1 {
+        font-size: 30px;
+        color: #001e4d;
+        font-weight: 600;
+        border-bottom: 1px solid #333;
+        padding-bottom: 30px;
+    }
+    
+    #breadcrumb:hover {
+        background-color: #a1a1a1;
+    }
+    
+    #loginform {
+        text-align: center;
+        font-family: "teko";
+        font-size: 40px;
+    }
+    
+    .ForgotUsername {
+        font-family: 'Tinos';
+        color: darkslateblue;
+        font-size: 18px;
+    }
+    
+    #signup {
+        color: red;
+    }
+    
+    #LogInButton {
+        background-color: rgb(76, 122, 221);
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        border: none;
+        border-radius: 50px;
+    }
+    
+    #LogInButton:hover {
+        background-color: rgb(54, 87, 158);
+    }
+    
+    #textboxid {
+        margin-left: 50px;
+        padding: 10px 0 10px 10px;
+        width: 65vh;
+        font-size: 20px;
+        font-family: "Noto Sans", sans-serif;
+        float: left;
+    }
+    
+    #breadcrumb {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    input {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-style: solid;
+    }
+    /*Page Specific:Booking*/
+    
+    .HomePageH1 p {
+        margin: 0;
+    }
+    
+    .HomePageH1 h1 {
+        margin: 5.5vh 0 0 0;
+    }
+    
+    #breadcrumbyummy {
+        padding-left: 2vw;
+        float: left;
+        text-wrap: wrap;
+        background-color: rgb(255, 255, 255, 0.8);
+        max-width: 97.2vw;
+        width: 100vw;
+        text-align: left;
+        font-family: "Tinos";
+        font-size: 30px;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    #bookingform {
+        text-align: center;
+        margin: 0 5vh 0 5vh;
+        word-wrap: break-word;
+        background-color: #ffff;
+        font-size: 20px;
+        height: auto;
+        padding-bottom: 5vh;
+    }
+    
+    #bookingsubmit {
+        background-color: rgb(76, 122, 221);
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        margin-top: 3vh;
+    }
+    
+    #bookingsubmit:hover {
+        background-color: rgb(54, 87, 158);
+        cursor: pointer;
+    }
+    
+    .empty {
+        border-color: red;
+    }
+    
+    #submitted {
+        font-size: 35px;
+        background-color: white;
+        text-align: center;
+    }
+    
+    .socialbuttons {
+        margin: auto;
+        width: 20vw;
+    }
+    
+    .basicinfo {
+        margin: 0;
+    }
+    
+    .socialbuttons {
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #socialshare {
+        letter-spacing: 5px;
+    }
