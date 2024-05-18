@@ -5,6 +5,8 @@
     @import url(https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap);
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
     #NOMARGINPLEASE {
         margin: 0;
     }
@@ -191,10 +193,11 @@
     
     #profileicon {
         height: 10vh;
-        width: auto;
+        width: 10vh;
         border-radius: 50%;
         float: right;
         margin: 15px;
+        object-fit: fit;
     }
     
     .profilesize {
@@ -248,6 +251,7 @@
         align-items: center;
         text-decoration: none;
         margin: 12px 0px;
+        color:black
     }
     
     .profilelinks p {
@@ -278,12 +282,15 @@
         word-wrap: break-word;
         background-color: #ffff;
         font-size: 20px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom:5vh;
     }
     
     .HomePageH1 {
         font-family: "Fuggles";
         text-align: center;
-        background-image: url(BackgroundImage2.webp);
+        background-image: url(images/BackgroundImage2.webp);
         background-repeat: no-repeat;
         font-weight: bold;
         background-size: cover;
@@ -395,8 +402,9 @@
     
     #textboxid {
         margin-left: 50px;
+        margin-right:20px;
         padding: 10px 0 10px 10px;
-        width: 65vh;
+        width: 25vw;
         font-size: 20px;
         font-family: "Noto Sans", sans-serif;
         float: left;
@@ -494,4 +502,169 @@
     
     #socialshare {
         letter-spacing: 5px;
+    }
+
+    #submitbutton {
+        background-image: url(images/CafeBackground.jpg);
+    }
+
+    .reviewbox {
+        border-radius: 10px;
+        background-color:rgb(184, 184, 236);
+        width: 35vw;
+        height: 20vh;
+        color:black;
+        font-family: "Poppins";
+        font-size:25px;
+        padding:20px;
+    }
+
+    #latestreviewbox {
+        border-radius: 10px;
+        background-color:rgb(184, 184, 236);
+        width: 35vw;
+        height: auto;
+        color:black;
+        font-family: "Poppins";
+        font-size:25px;
+        padding:20px;
+    }
+
+    .centrer {
+        background-color:white;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        align-items:center;
+        display:flex;
+        justify-content:center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+
+    }
+
+    .reviewtext {
+        margin-left:12px;
+    }
+
+    #latestreviewtext {
+        margin-left:12px;
+    }
+
+    .reviewname {
+        font-size:15px;
+        margin-left:20px;
+        display:flex;
+    }
+
+    #latestreviewname {
+        font-size:15px;
+        margin-left:20px;
+        display:flex;
+    }
+
+    .starrrating{
+        display: inline-flex;
+        float:right;
+    }
+
+    #lateststarrating {
+        display: inline-flex;
+    }
+
+    .checked {
+        color:orange;
+    }
+    
+    #star {
+        border-color:black;
+        border:2px;
+    }
+
+    #slideshow {
+        overflow: hidden;
+    }
+
+    #slideshowitem {
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infite;
+    }
+    .formstyling {
+        border-radius:5px;
+        background-color:#e0e0e0;
+        width:50vw;
+        height:30vh;
+        text-align:center;
+    }
+
+    #reviewtext {
+        width:30vw;
+        height:auto;
+    }
+
+    #latestreviewtext {
+        width:30vw;
+        height:auto;
+    }
+
+    #reviewsubmit {
+        background-color:lightblue;
+        border:0;
+        border-radius:15px;
+        font-size:25px;
+        font-family: "Tinos";
+        font-weight:300;
+    }
+
+
+    #reviewsubmit:hover {
+        background-color:rgb(111, 109, 219);
+        color:white;
+        cursor:pointer;
+    }
+
+    .show {
+        display:block;
+        padding:15vh;
+        font-family:"tinos";
+        font-size:25px;
+    }
+
+    .menuitem {
+        border-color:black;
+        border:2px solid;
+        border-radius:12px;
+        height: 40vh;
+        width: 20vw;
+        display:flex;
+        text-align:center;
+        align-items:center;
+        flex-direction:column-reverse;
+        overflow:hidden;
+        background-color: rgb(202, 199, 199);
+    }
+
+    #menubody {
+        text-align: center;
+        margin: 0 5vh 0 5vh;
+        word-wrap: break-word;
+        background-color: #ffff;
+        font-size: 20px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom:5vh;
+        display:flex;
+        justify-content:space-evenly;
+    }
+
+    #menuphoto {
+        overflow:hidden;
+        margin:5px;
+        width:17vw;
+        height:16vw;
+        border-radius:10px;
+        border-color:rgb(204, 201, 201);
+        border:5px solid;
+        object-fit:cover;
     }
