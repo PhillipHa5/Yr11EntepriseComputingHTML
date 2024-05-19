@@ -6,7 +6,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
     #NOMARGINPLEASE {
         margin: 0;
     }
@@ -94,6 +94,7 @@
         width: 100%;
         position: fixed;
         top: 0;
+        z-index:2;
     }
     
     #HeaderImage {
@@ -145,7 +146,7 @@
     }
     /*Nav Bar*/
     
-    ul {
+    nav ul {
         display: inline;
         float: right;
         list-style-type: none;
@@ -155,11 +156,11 @@
         background-color: rgb(235, 221, 131);
     }
     
-    li {
+    nav li {
         float: right;
     }
     
-    li a {
+    nav li a {
         display: block;
         color: white;
         text-align: center;
@@ -171,7 +172,7 @@
         font-size: 25px;
     }
     
-    li a:hover {
+    nav li a:hover {
         background-color: rgb(222, 197, 30);
         text-decoration: underline;
     }
@@ -271,7 +272,7 @@
         font-weight: bold;
     }
     
-    ul:hover img {
+    nav ul:hover img {
         cursor: pointer;
     }
     /*Page Specific: Home*/
@@ -635,14 +636,15 @@
         border-color:black;
         border:2px solid;
         border-radius:12px;
-        height: 40vh;
+        height: auto;
         width: 20vw;
         display:flex;
         text-align:center;
         align-items:center;
         flex-direction:column-reverse;
-        overflow:hidden;
         background-color: rgb(202, 199, 199);
+        margin-right:35px;
+        margin-top:50px;
     }
 
     #menubody {
@@ -655,7 +657,7 @@
         padding-right: 250px;
         padding-bottom:5vh;
         display:flex;
-        justify-content:space-evenly;
+        flex-wrap:wrap;
     }
 
     #menuphoto {
@@ -667,4 +669,98 @@
         border-color:rgb(204, 201, 201);
         border:5px solid;
         object-fit:cover;
+    }
+
+    .searchbox {
+        width:600px;
+        background: white;
+        margin:auto;
+        border-radius: 5px;
+        border-color:lightslategray;
+        border:2px solid;
+        position:absolute;
+        left:35%;
+        top:85%;
+    }
+
+    #row {
+        display:flex;
+        align-items:center;
+        padding: 10px 20px;
+    }
+
+    #row input {
+        flex:1;
+        height:50px;
+        background: transparent;
+        border:0;
+        outline:0;
+        font-size:18px;
+        color: #333;
+    }
+
+
+    #row button {
+        background:transparent;
+        border:0;
+        outline:0;
+    }
+
+    button .fa-solid {
+        width:25px;
+        color:#555;
+        font-size:22px;
+        cursor: pointer;
+    }
+
+    .searchresultbox ul {
+        border-top: 1px solid #999;
+        padding:15px 10px;
+
+    }
+
+    .searchresultbox ul li {
+        list-style:none;
+        border-radius: 3px;
+        padding: 15px 10px;
+        cursor:pointer;
+    }
+
+    .searchresultbox ul li:hover {
+        background: #e9f3ff;
+    }
+
+    .searchresultbox {
+        max-height:300px;
+        overflow-y:scroll;
+    }
+
+    #storebody {
+        text-align: center;
+        margin: 0 5vh 0 5vh;
+        word-wrap: break-word;
+        background-color: #ffff;
+        font-size: 20px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom:5vh;
+        justify-content:space-evenly;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    #addtocartbtn {
+        border-radius:15px;
+        border:2px solid;
+        border-color:black;
+        background-color:lightyellow;
+        padding:10px;
+        font-family: "DM Sans";
+        margin-bottom:0.5vh;
+    }
+
+    #addtocartbtn:hover {
+        background-color:yellow;
+        cursor:pointer;
+
     }
