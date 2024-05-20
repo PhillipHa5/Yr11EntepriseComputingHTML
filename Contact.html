@@ -18,11 +18,13 @@
         </div>
         <ul>
             <img src="images/cart.jpg" id="profileicon">
-            <li><a href="Contact.html" id="contactusbutton">Contact Us</a></li>
+            <li><a href="Booking.html" id="contactusbutton">Booking</a></li>
             <li><a href="Menu.html">Menu</a></li>
             <li><a href="Store.html">Store</a></li>
             <li><a href="Reviews.html">Our Reviews</a></li>
-            <li><a href="Booking.html">Booking</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Blog.html">Blog</a></li>
             <li><a href="Home.html">Home</a></li>
         </ul>
         </div>
@@ -33,25 +35,32 @@
                 </div>
                 <hr id="loginhr">
                 <a class="profilelinks" id="logintext">
-                    <p id="logintext">Visit Store to see cart</p>
+                    <a href="Store.html" id="storejump"><p id="logintext">Visit Store to see cart</p></a>
                     <span>></span>
                 </a>
             </div>
         </div>
+        </div>
     </nav>
     <div class="HomePageH1">
         <h1 id="Header">Meet and Eat Cafe</h1>
-        <p id="breadcrumbyummy">Home</p>
+        <p id="breadcrumbyummy"><a href="Home.html" id="breadcrumb">Home</a>&nbsp; > Contact Us</p>
     </div>
-    <h3>Overview<hr id="homehr"></h3>
-    <p id="BodyText">Located right in the middle of Ed Square town center, we are a vibrant hub that offers a large variety of dining options, from the classic coffee and donuts, to more "out there" dishes such as Spaghetti on Toast, representing our personality perfectly.</p>
-    <h3>
-        <hr id="homehr">Our Location</h3>
-    <p id="BodyText">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d715.992944032769!2d150.85756623958918!3d-33.96947296264057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ed00224723b1%3A0x82f8d58329e759d!2sMeet%20and%20Eat%20Edsquare!5e0!3m2!1sen!2sau!4v1715569894502!5m2!1sen!2sau"
-            width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br><br><br><br><br><br><br><br><br><br><br>
-    </p>
+    </div>
+    <h3>Contact Us<hr id="homehr"></h3>
+    <p id="BodyText">Need some help, or want to give some feedback?</p>
+    <div id="BodyText">
+    <form id="feedbackform" onsubmit="return false">
+        <label>First Name</label>
+        <input type="text" id="feedbackfirstname">
+        <label>Second Name</label>
+        <input type="text" id="feedbacksecondname"><br>
+        <label>Comment/Feedback</label>
+        <input type="text" id="feedbacktext"><br>
+        <button type="submit" onclick="submitfeedback()" id="bookingsubmit">Submit</button>
+    </form>
+    <p id="submittedtext" class="noshow">Feedback Submitted!</p>
+    </div>
     <footer>
         <p id="webfooterheader">Meet and Eat Cafe</p>
         <div class="tradinghours">
@@ -87,5 +96,6 @@
     </footer>
 </body>
 <script src="scripts.js"></script>
+<script src="contact.js"></script>
 
 </html>

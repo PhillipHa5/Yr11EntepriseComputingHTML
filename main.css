@@ -10,9 +10,9 @@
     #NOMARGINPLEASE {
         margin: 0;
     }
-    
+
     p {
-        margin: 0;
+        margin:0;
     }
     /*Footer*/
     
@@ -120,6 +120,7 @@
         line-height: 15vh;
         font-family: "Poetsen One";
         font-size: 25px;
+        text-shadow: 2px 2px rgb(80, 99, 207);
     }
     
     .HeaderLogo {
@@ -158,6 +159,7 @@
     
     nav li {
         float: right;
+        text-shadow: 2px 2px rgb(80, 99, 207);
     }
     
     nav li a {
@@ -205,19 +207,24 @@
         position: absolute;
         top: 100%;
         right: 0;
-        width: 320px;
+        width: 400px;
         max-height: 0px;
         overflow: hidden;
     }
     
     .profilesize.openedmenu {
-        max-height: 30vh;
+        max-height: 70vh;
     }
     
     .profilebackground {
         background: #ffff;
         padding: 20px;
         margin: 10px;
+        border-radius:5px;
+        height:50vh;
+        border:2px solid;
+        border-color:black;
+        position:relative;
     }
     
     .profileinfo {
@@ -252,7 +259,9 @@
         align-items: center;
         text-decoration: none;
         margin: 12px 0px;
-        color:black
+        color:black;
+        overflow-x:hidden;
+        overflow-y:scroll;
     }
     
     .profilelinks p {
@@ -261,15 +270,6 @@
     
     .profilelinks span {
         font-size: 25px;
-    }
-    
-    .profilelinks:hover p {
-        font-weight: bold;
-        text-decoration: underline;
-    }
-    
-    .profilelinks:hover span {
-        font-weight: bold;
     }
     
     nav ul:hover img {
@@ -304,6 +304,7 @@
     
     .HomePageH1 h1 {
         height: 22.5vh;
+        text-shadow:5px 5px black;
     }
     
     #HomeBackground {
@@ -680,7 +681,7 @@
         border:2px solid;
         position:absolute;
         left:35%;
-        top:85%;
+        top:90%;
     }
 
     #row {
@@ -764,3 +765,192 @@
         cursor:pointer;
 
     }
+
+    .cartimagebox {
+        width:50px;
+        height:50px;
+        float:left;
+        margin-right:90px;
+    }
+
+    .cartimage {
+        object-fit:fill;
+        width:50px;
+        height:50px;
+    }
+
+    .cartitem  {
+        overflow:hidden;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 12px 0px;
+        color: black;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        flex: 1;
+        max-height:27.8vh;
+    }
+
+    .cart .cartitem p {
+        float:right;
+        margin-right:25px;
+        overflow:hidden;
+    }
+
+    .cart p {
+        margin-right:25px;
+    }
+
+    .fa-trash:hover {
+        cursor:pointer;
+        color:orangered;
+    }
+
+    .cartimage{
+        border-radius:50%;
+    }
+
+    .cart h2 {
+        float:right;
+    }
+
+    .fa-twitter:hover {
+        cursor:pointer;
+        color:orangered;
+    }
+
+    .fa-facebook:hover {
+        cursor:pointer;
+        color:orangered;
+    }
+
+    .fa-instagram:hover {
+        cursor:pointer;
+        color:orangered;
+    }
+
+    .cartproduct {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 12px 0px;
+        color: black;
+        overflow-y:hidden;
+        overflow-x:hidden;
+        flex: 1;
+    }
+
+    #clearcart {
+        position:absolute;
+        bottom:2.5%;
+        border-radius:25px;
+        padding:10px;
+        background:lightblue;
+    }
+
+    #clearcart:hover {
+        background-color:rgb(80, 99, 207);;
+        color:white;
+        text-decoration:underline;
+        cursor:pointer;
+    }
+
+    #profileiconbadge {
+        margin:0;
+        padding:0;
+        display:flex;
+        float:right;
+    }
+
+    #itemcartbadge {
+        position:absolute;
+        right:15px;
+        top:90px;
+        background:red;
+        border-radius:50%;
+        color:white;
+        text-align:center;
+        padding:10px 15px;
+        font-size:20px;
+        font-weight:900;
+    }
+
+    #checkout {
+        position:absolute;
+        bottom:2.5%;
+        border-radius:25px;
+        padding:10px;
+        background:lightblue;
+        right:5%;
+    }
+
+    #checkout:hover {
+        background-color:rgb(80, 99, 207);;
+        color:white;
+        text-decoration:underline;
+        cursor:pointer;
+    }
+
+    #mumdayimg {
+        width:50%;
+        height:50%;
+    }
+
+    #makebook {
+        color:gray;
+        text-decoration:none;
+        font-size:30px;
+    }
+
+    #makebook:hover {
+        color:rgb(39, 39, 39);
+    }
+
+    #storejump {
+        text-decoration:none;
+        color:black;
+    }
+
+    #storejump:hover {
+        text-decoration:underline;
+    }
+    
+    #blogjump {
+        text-decoration:none;
+        color:black;
+        font-weight:bold;
+    }
+
+    #blogjump:hover {
+        text-decoration:underline;
+    }
+
+    .noshow {
+        display:none;
+    }
+
+    .phonenavbar {
+        display:none;
+    }
+    @media only screen and (min-width:450px) {
+        .headerLogo {
+            display:flex;
+            width:900px;
+        }
+
+        nav {
+            display:flex;
+            height:30vh;
+        }
+
+        ul {
+            width:auto;
+        }
+    
+    }
+
+    

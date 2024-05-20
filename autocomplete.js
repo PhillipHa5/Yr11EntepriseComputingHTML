@@ -1,39 +1,83 @@
 let product= [
     {
         id: 0,
-        image:'images/bananasplit.jpg',
-        title:'Beans',
-        price:'15',
+        image:'images/CaramelBlend.webp',
+        title:'Caramel Blend',
+        price:'8',
     },
     {
         id: 1,
-        image:'images/burger.jpg',
-        title:'phatbeans',
-        price:'15',
+        image:'images/Toffee.png',
+        title:'Toffee Blend',
+        price:'12',
     },
     {
         id: 2,
-        image:'images/cart.jpg',
-        title:'LargeBeans',
+        image:'images/ChocolateBean.webp',
+        title:'Chocolate Blend',
         price:'15',
     },
     {
         id: 3,
-        image:'images/hotchocolate.jpg',
-        title:'Product 3',
-        price:'15',
+        image:'images/BlackCoffee.webp',
+        title:'Decaf Black',
+        price:'5',
+    },
+    {
+        id: 4,
+        image:'images/DECAF COFFEE.webp',
+        title:'Decaf Espresso',
+        price:'10',
+    },
+    {
+        id: 5,
+        image:'images/espresso.webp',
+        title:'Espresso',
+        price:'13',
+    },
+    {
+        id: 6,
+        image:'images/HotChocolateDecaf.webp',
+        title:'Decaf Hot Chocolate',
+        price:'14',
+    },
+    {
+        id: 7,
+        image:'images/Vanilla.webp',
+        title:'Vanilla Coffee',
+        price:'17',
+    },
+    {
+        id: 8,
+        image:'images/brazil.jpg',
+        title:'Brazil Campo Alegre',
+        price:'18',
+    },
+    {
+        id: 9,
+        image:'images/ground.jpg',
+        title:'Ground Coffee',
+        price:'20',
     },
 ];
 
 let autocompletewords = [
-    "Beans",
-    "phatbeans",
-    "LargeBeans",
+    "Caramel Blend",
+    "Toffee Blend",
+    "Chocolate Blend",
+    "Decaf Black",
+    "Decaf Espresso",
+    "Espresso",
+    "Decaf Hot Chocolate",
+    "Vanilla Coffee",
+    "Brazil Campo Alegre",
+    "Ground Coffee",
 ]
 
 const resultBox = document.querySelector('.searchresultbox');
 const searchinputbox = document.getElementById('searchinputbox');
 const categories = [...new Set(product.map((item)=> {return item}))]
+let i = 0;
 searchinputbox.onkeyup = function() {
     resultBox.style.display = "block";
     let result = [];
@@ -57,13 +101,13 @@ searchinputbox.onkeyup = function() {
     }
     
 }
-const displayitem = (items) => {
-    document.getElementById('storebody').innerHTML=items.map((item)=>{
+const displayitem = (item) => {
+    document.getElementById('storebody').innerHTML=item.map((item)=>{
         var {image, title, price} = item;
         return(
-            `<div class="menuitem">
-            <button id="addtocartbtn">Add to cart</button>
-            <p>${title}</p>
+            `<div class="menuitem">`+
+            "<button id='addtocartbtn' onclick='addtocart("+(i++)+")'>Add to cart</button>"+
+            `<p>${title}</p>
             <h2>$ ${price}.00</h2>
             <div id="menuphotobox">
             <img src="${image}" id="menuphoto">
@@ -91,14 +135,72 @@ function searchinput() {
     console.log(searchinputbox.value)
 }
 
+
+
+
+var cart = []
+function addtocart(a) {
+    cart.push({...categories[a]});
+    showcart();
+}
+
+function deleteElement(a){
+    cart.splice(a, 1);
+    showcart();
+}
+
+
+function clearcart() {
+    cart = []
+    document.getElementById('cartitem').innerHTML = "";
+    document.getElementById('total').innerHTML = "$0.00";
+    document.getElementById("itemcartbadge").innerHTML = cart.length;
+    document.getElementById("count").innerHTML = "Items:" + ' ' + cart.length;
+    
+}
+
 document.onclick = ($e) => {
     let x = [$e.srcElement];
     let checker = x[0].id;
     console.log(checker)
     if(checker =="searchinputbox" || checker == "searchresultbox" || checker == "row") {
         resultBox.style.display = "block";
+        profilemenu.classList.remove('openedmenu')
     } else {
         resultBox.style.display ="none";
+    } if(checker == 'profileicon') {
+        profilemenu.classList.toggle('openedmenu');
+    } if(checker =='addtocartbtn') {
     }
-};
+    else {
+        if (checker !== 'profileicon' && checker !== 'menu' && checker !== "logintext" && checker !== '' && checker !== "clearcart") {
+            profilemenu.classList.remove('openedmenu');
+    }
+}};
 
+function showcart(a){
+    console.log(cart)
+    let k = 0;
+    let total=0;
+    document.getElementById("itemcartbadge").innerHTML = cart.length;
+    document.getElementById("count").innerHTML = "Items:" + ' ' + cart.length;
+    if(cart.length==0) {
+        document.getElementById('cartitem').innerHTML = 'Your cart is empty!';
+    } else {
+        document.getElementById('cartitem').innerHTML = cart.map((items) => {
+            var {image, title, price} = items;
+            total=total+parseInt(price, 10);
+            document.getElementById('total').innerHTML = "$ "+total+".00";
+            return(
+                `<div class="cartproduct">
+                <div class=cartimagebox>
+                <img class="cartimage" src=${image}>
+                </div>
+                <p>${title}</p>
+                <h2>$${price}.00</h2>`+
+                "<span class='fa-solid fa-trash' onclick='deleteElement("+ (k++) +")'></span>"+
+               ` </div>`
+            )
+        }).join('');
+    }
+}

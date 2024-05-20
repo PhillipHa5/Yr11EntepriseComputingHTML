@@ -3,15 +3,15 @@
 
 <head>
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="images/Icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/Icon.png">
     <title>Meet and Eat Cafe</title>
 </head>
 
 <body id="HomeBackground">
     <nav>
         <div class="HeaderLogo">
-            <a href="Home.html" target="_self" id="NOUNDERLINEPLEASE">
+            <a href="/Home.html" target="_self" id="NOUNDERLINEPLEASE">
                 <img src="images/Icon.png" alt="Meet And Eat Cafe" id="IconImg">
                 <p id="HeaderText">Meet and Eat Cafe</p>
             </a>
@@ -42,32 +42,17 @@
         </div>
     </nav>
     <div class="HomePageH1">
-        <h1>Meet and Eat Cafe</h1>
-        <p id="breadcrumbyummy"><a href="Home.html" id="breadcrumb">Home</a>&nbsp; > Booking</p>
+        <h1 id="Header">Meet and Eat Cafe</h1>
+        <p id="breadcrumbyummy"><a href="Home.html" id="breadcrumb">Home</a>&nbsp; > Events</p>
     </div>
-    <h3>Make A Booking
-        <hr id="homehr">
-    </h3>
+    <h3>Our Events<hr id="homehr"></h3>
+    <p id="BodyText">Keep up to date with our latest events! With our <a href="Blog.html" id="blogjump">Blog</a></p>
+    <h3>
+        <hr id="homehr">Current Event</h3>
     <p id="BodyText">
-        <form id="bookingform" onsubmit="return false">
-            <label>Name</label><br>
-            <input type="text" placeholder="Enter your name" id="namecheck"><br>
-            <label id="incorrectname" style="display:none;">Please input a valid response</label><br>
-            <label>Email</label><br>
-            <input type="text" placeholder="Enter your Email" id="emailcheck"><br>
-            <label id="incorrectemail" style="display:none;">Please input a valid response</label><br>
-            <label>Phone Number</label><br>
-            <input type="text" placeholder="Enter your phone number" id="phonecheck"><br>
-            <label id="incorrectphone" style="display:none;">Please input a valid response</label><br>
-            <label>Number Of People</label><br>
-            <input type="number" placeholder="Number of people" id="numbercheck"><br>
-            <label id="incorrectnumber" style="display:none;">Please input a valid response</label><br>
-            <label>Date/Time</label><br>
-            <input type="datetime-local" id="datetime"><br>
-            <label id="incorrectdate" style="display:none;">Please input a valid response</label><br>
-            <button type="submit" id="bookingsubmit" onclick="bookingcheck()">Submit</button><br>
-        </form>
-        <label id="submitted" style="display:none;">Booking Submitted!</label>
+        <img src="images/mumday.jpg" id="mumdayimg"><br>
+        Celebrate Mother's day with who else than your own Mother?<br><br>
+        <a href="Booking.html" id="makebook">Make A Booking Now!</a>
     </p>
     <footer>
         <p id="webfooterheader">Meet and Eat Cafe</p>
@@ -102,9 +87,7 @@
             </div>
         </div>
     </footer>
-    </footer>
-    <script src="scripts.js"></script>
-    <script src="booking.js"></script>
 </body>
+<script src="scripts.js"></script>
 
 </html>
