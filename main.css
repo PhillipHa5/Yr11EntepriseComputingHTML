@@ -936,7 +936,8 @@
     .phonenavbar {
         display:none;
     }
-    @media only screen and (min-width:450px) {
+    
+    @media screen and (max-width:430px) {
         .headerLogo {
             display:flex;
             width:900px;
@@ -945,12 +946,135 @@
         nav {
             display:flex;
             height:30vh;
+            width:100vw;
+            position:absolute;
         }
 
         ul {
             width:auto;
         }
-    
+
+        iframe {
+            width:300px;
+            height:200px;
+        }
+
+        #BodyText {
+            padding:0;
+        }
+
+        footer {
+            height:80vh;
+            width:85vw;
+        }
+        
+        .tradingdays {
+            position:absolute;
+            left:10%;
+        }
+
+        .basicinfo {
+            height:25vh;
+            position:relative;
+            top:50%;
+        }
+
+        #webfooterheader {
+            width:100vw;
+        }
+
+        .basicinfo p {
+            height:25vh;
+            line-height:25px;
+        }
+        .socialbuttons {
+            position:absolute;
+            width:100vw;
+            line-height:30px;
+            left:-5%;
+            margin-top:15px;
+        }
+
+        .HomePageH1 {
+            padding-top:40vh;
+        }
+
+        .HomePageH1 h1 {
+            position:absolute;
+            top:25%;
+        }
+
+        #breadcrumbyummy {
+            position: absolute;
+            top:68%;
+        }
+
+        #profileicon {
+            width:13%;
+            height:20%;
+            position:absolute;
+            top:-2%;
+            right:-1%;
+        }
+
+        #IconImg {
+            width:13%;
+            height:20%;
+            margin-right:700px;
+        }
+
+        #HeaderText {
+            display:none;
+        }
+
+        nav li a {
+            font-size:12px;
+            line-height:110px;
+        }
+        
+        nav ul {
+            margin-top:70px;
+        }
+
+        #contactusbutton {
+            height:5vh;
+        }
+
+        #menubody {
+            padding:15px;
+        }
+
+        .menuitem {
+        padding:15px;
+        margin-left:100px;
+        }
+        
+        .searchbox {
+            position: absolute;
+            top:110%;
+            left:15%;
+            width:70%;
+            height:7%;
+        }
+
+        #itemcartbadge {
+            position:absolute;
+            z-index: 1;
+            top:40px;
+            right:10px;
+        }
+
+        #storebody {
+            padding:0;
+        }
+
+        #latestreviewbox {
+            font-size:12px;
+        }
+
+        .reviewbox {
+            font-size:12px;
+        }
     }
 
     
